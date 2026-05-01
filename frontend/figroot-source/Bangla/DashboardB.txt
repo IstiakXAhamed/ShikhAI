@@ -1,0 +1,537 @@
+export default function Dashboard() {
+  return (
+    <div className="border-t-8 border-t-[#F0F0F0] border-r-8 border-r-[#F0F0F0] border-l-8 border-l-[#F0F0F0] bg-[#FFF] min-w-screen min-h-screen overflow-hidden">
+      <div className="inline-flex pt-[42px] pr-0 pb-[60px] pl-0 flex-col items-center gap-[431px] border-r border-r-[#E2E8F0] w-[251px] h-[800px] absolute left-[7px] top-2">
+        <div className="w-[251px] h-[237px] absolute left-0 top-[42px]">
+          <div className="flex flex-col items-start gap-3 bg-[#FFF] w-60 absolute left-1.5 top-[99px]">
+            <div className="flex flex-col items-start w-full">
+              <div className="flex min-w-[128px] py-1.5 px-2 items-center gap-[gap-2] bg-[#F55331] w-60 overflow-hidden">
+                <div className="shrink-0 w-5 h-5 relative">
+                  <svg
+                    width="5"
+                    height="20"
+                    viewBox="0 0 5 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[5px] h-5 absolute left-3.5 top-0 "
+                  >
+                    <path
+                      d="M4.95448 17.497C4.96189 18.8702 3.85448 19.9883 2.48215 19.9957C2.38013 19.9965 2.27729 19.9908 2.17609 19.9784C0.902486 19.79 -0.0305012 18.6818 0.000762942 17.395V2.6005C-0.0296785 1.31209 0.905777 0.20386 2.1802 0.0170978C3.54348 -0.142514 4.77842 0.833256 4.93803 2.19654C4.94955 2.29691 4.95531 2.39729 4.95448 2.49848V17.497Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-3 h-3 absolute left-px top-2 "
+                  >
+                    <path
+                      d="M2.47727 7.50833C3.84549 7.50833 4.95454 8.61739 4.95454 9.9856C4.95454 11.3538 3.84549 12.4629 2.47727 12.4629C1.10905 12.4629 0 11.3538 0 9.9856C0 8.61739 1.10905 7.50833 2.47727 7.50833ZM8.99502 0.000823042C7.62022 0.0765152 6.55395 1.22918 6.58604 2.60562V9.25912C6.58604 11.065 7.38081 12.1609 8.54498 12.3946C9.88852 12.6669 11.1975 11.7989 11.4698 10.4554C11.5036 10.2908 11.52 10.1238 11.5192 9.95598V2.49044C11.5217 1.11728 10.411 0.00246822 9.03781 0C9.02382 0 9.00901 3.01284e-07 8.99502 0.000823042Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p className="line-clamp-1 overflow-hidden text-[#F8FAFC] text-ellipsis font-raleway text-base font-medium leading-7 w-full">
+                  ড্যাশবোর্ড
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-start w-full">
+              <div className="flex min-w-[128px] py-1.5 px-2 items-center gap-[gap-2] rounded-[calc(var(--radius)-4px)px] w-full overflow-hidden">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 overflow-hidden relative "
+                >
+                  <path
+                    d="M17.5 12.5C17.5 12.942 17.3244 13.366 17.0118 13.6785C16.6993 13.9911 16.2754 14.1667 15.8333 14.1667H5.83333L2.5 17.5V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V12.5Z"
+                    stroke="black"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="line-clamp-1 overflow-hidden text-[#000] text-ellipsis font-raleway text-base font-medium leading-[22px] w-full">
+                  এআই চ্যাট
+                </p>
+              </div>
+            </div>
+            <div className="flex min-w-[128px] py-1.5 px-2 items-center gap-[gap-2] rounded-[calc(var(--radius)-4px)px] w-full overflow-hidden">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 relative "
+              >
+                <path
+                  d="M10.1833 1.66666H9.81667C9.37464 1.66666 8.95072 1.84225 8.63816 2.15481C8.3256 2.46737 8.15 2.8913 8.15 3.33332V3.48332C8.1497 3.77559 8.07255 4.06265 7.92628 4.31569C7.78002 4.56873 7.56978 4.77885 7.31667 4.92499L6.95834 5.13332C6.70497 5.2796 6.41756 5.35661 6.125 5.35661C5.83244 5.35661 5.54503 5.2796 5.29167 5.13332L5.16667 5.06666C4.78422 4.84604 4.32987 4.78619 3.90334 4.90025C3.47681 5.0143 3.11296 5.29294 2.89167 5.67499L2.70833 5.99166C2.48772 6.3741 2.42787 6.82846 2.54192 7.25499C2.65598 7.68152 2.93461 8.04536 3.31667 8.26666L3.44167 8.34999C3.69356 8.49542 3.90302 8.70423 4.04921 8.95568C4.1954 9.20713 4.27325 9.49247 4.275 9.78332V10.2083C4.27617 10.502 4.19971 10.7908 4.05337 11.0454C3.90703 11.3 3.69601 11.5115 3.44167 11.6583L3.31667 11.7333C2.93461 11.9546 2.65598 12.3185 2.54192 12.745C2.42787 13.1715 2.48772 13.6259 2.70833 14.0083L2.89167 14.325C3.11296 14.707 3.47681 14.9857 3.90334 15.0997C4.32987 15.2138 4.78422 15.1539 5.16667 14.9333L5.29167 14.8667C5.54503 14.7204 5.83244 14.6434 6.125 14.6434C6.41756 14.6434 6.70497 14.7204 6.95834 14.8667L7.31667 15.075C7.56978 15.2211 7.78002 15.4313 7.92628 15.6843C8.07255 15.9373 8.1497 16.2244 8.15 16.5167V16.6667C8.15 17.1087 8.3256 17.5326 8.63816 17.8452C8.95072 18.1577 9.37464 18.3333 9.81667 18.3333H10.1833C10.6254 18.3333 11.0493 18.1577 11.3618 17.8452C11.6744 17.5326 11.85 17.1087 11.85 16.6667V16.5167C11.8503 16.2244 11.9275 15.9373 12.0737 15.6843C12.22 15.4313 12.4302 15.2211 12.6833 15.075L13.0417 14.8667C13.295 14.7204 13.5824 14.6434 13.875 14.6434C14.1676 14.6434 14.455 14.7204 14.7083 14.8667L14.8333 14.9333C15.2158 15.1539 15.6701 15.2138 16.0967 15.0997C16.5232 14.9857 16.887 14.707 17.1083 14.325L17.2917 14C17.5123 13.6175 17.5721 13.1632 17.4581 12.7367C17.344 12.3101 17.0654 11.9463 16.6833 11.725L16.5583 11.6583C16.304 11.5115 16.093 11.3 15.9466 11.0454C15.8003 10.7908 15.7238 10.502 15.725 10.2083V9.79166C15.7238 9.49797 15.8003 9.2092 15.9466 8.95457C16.093 8.69994 16.304 8.4885 16.5583 8.34166L16.6833 8.26666C17.0654 8.04536 17.344 7.68152 17.4581 7.25499C17.5721 6.82846 17.5123 6.3741 17.2917 5.99166L17.1083 5.67499C16.887 5.29294 16.5232 5.0143 16.0967 4.90025C15.6701 4.78619 15.2158 4.84604 14.8333 5.06666L14.7083 5.13332C14.455 5.2796 14.1676 5.35661 13.875 5.35661C13.5824 5.35661 13.295 5.2796 13.0417 5.13332L12.6833 4.92499C12.4302 4.77885 12.22 4.56873 12.0737 4.31569C11.9275 4.06265 11.8503 3.77559 11.85 3.48332V3.33332C11.85 2.8913 11.6744 2.46737 11.3618 2.15481C11.0493 1.84225 10.6254 1.66666 10.1833 1.66666Z"
+                  stroke="black"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 9.99999C12.5 8.61928 11.3807 7.49999 10 7.49999C8.61929 7.49999 7.5 8.61928 7.5 9.99999C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                  stroke="black"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <p className="line-clamp-1 overflow-hidden text-[#000] text-ellipsis font-raleway text-base font-medium leading-7 w-full">
+                সেটিংস
+              </p>
+            </div>
+          </div>
+          <div className="w-52 h-[52px] absolute left-[30px] top-0">
+            <div className="inline-flex items-center gap-4 absolute left-0 top-0">
+              <img
+                src="/BeigeRedBlackModernMinimalistMonogramLogo11.png"
+                className="w-[38px] h-9 absolute left-0 top-[3px] max-w-none"
+                alt="Beige Red & Black Modern Minimalist Monogram Logo(1) 1"
+              />
+              <p className="text-[#000] font-posteramaTextBold text-[32px] absolute left-[54px] top-0">
+                Shikh-AI
+              </p>
+            </div>
+            <p className="text-[#334155] font-poppins text-xs w-[154px] h-[18px] absolute left-[54px] top-[34px]">
+              আপনার ব্যক্তিগত এআই টিউটর
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-[15px] absolute left-[65px] top-[710px]">
+          <div className="w-6 h-6 overflow-hidden relative">
+            <svg
+              width="8"
+              height="20"
+              viewBox="0 0 8 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-1.5 h-[18px] absolute left-[3px] top-[3px] "
+            >
+              <path
+                d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <svg
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-[5px] h-2.5 absolute left-4 top-[7px] "
+            >
+              <path
+                d="M1 11L6 6L1 1"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <svg
+              width="14"
+              height="2"
+              viewBox="0 0 14 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-3 absolute left-[9px] top-3 "
+            >
+              <path
+                d="M13 1H1"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <p className="text-[#000] font-poppins text-xl w-fit">লগ আউট</p>
+        </div>
+      </div>
+      <div className="inline-flex pt-0 pr-[11px] pb-[26px] pl-0 items-center w-[858px] h-[732px] absolute left-[293px] top-[38px]">
+        <div className="flex flex-col items-start gap-4 w-[847px] h-[706px] absolute left-0 top-0">
+          <div className="flex flex-col items-start gap-4 w-full h-[311px]">
+            <div className="flex flex-col items-start gap-[17px] w-full">
+              <div className="flex justify-between items-center w-full">
+                <div className="flex flex-col items-start gap-4 w-[372px]">
+                  <div className="flex items-center gap-2.5 w-[372px]">
+                    <p className="text-[#000] font-raleway text-2xl font-medium leading-5 w-fit">
+                      ১১:০০ রাত
+                    </p>
+                    <div className="shrink-0 w-1 h-1"></div>
+                    <p className="text-[#000] font-raleway text-2xl font-medium leading-5 w-fit">
+                      সোমবার
+                    </p>
+                    <div className="shrink-0 w-1 h-1"></div>
+                    <p className="text-[#000] font-raleway text-2xl font-medium leading-5 w-fit">
+                      ২৮ এপ্রিল ২০২৬
+                    </p>
+                  </div>
+                  <p className="text-[#000] font-raleway text-2xl font-bold leading-5 w-full">
+                    আবার স্বাগতম, আল
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 w-fit">
+                  <div className="flex justify-center items-center rounded-[4.3px] w-[22px] h-[22px]">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="shrink-0 w-4 h-4 relative "
+                    >
+                      <path
+                        d="M6.8667 14C6.97829 14.203 7.14233 14.3722 7.34169 14.4901C7.54106 14.608 7.76842 14.6702 8.00003 14.6702C8.23165 14.6702 8.45901 14.608 8.65837 14.4901C8.85773 14.3722 9.02178 14.203 9.13337 14M4 5.33333C4 4.27247 4.42143 3.25505 5.17157 2.50491C5.92172 1.75476 6.93913 1.33333 8 1.33333C9.06087 1.33333 10.0783 1.75476 10.8284 2.50491C11.5786 3.25505 12 4.27247 12 5.33333C12 10 14 11.3333 14 11.3333H2C2 11.3333 4 10 4 5.33333Z"
+                        stroke="black"
+                        strokeWidth="0.714983"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="w-10 h-10 relative">
+                    <div className="w-10 h-10 absolute left-0 top-0"></div>
+                    <p className="text-[#FFF] font-posteramaTextBold text-base w-[26px] h-[21px] absolute left-[7px] top-2.5">
+                      AM
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-[11px] w-fit">
+                <div className="w-[400px] h-[35px] relative">
+                  <div className="flex pt-0 pr-3.5 pb-0 pl-8 items-center rounded-md border-[0.8px] border-[#E2E8F0] bg-[#F0F4F8] w-[400px] h-[35px] absolute left-0 top-0 overflow-hidden">
+                    <p className="text-[#64748B] font-raleway text-sm w-fit">
+                      বিষয়, অ্যাসাইনমেন্ট অনুসন্ধান করুন...
+                    </p>
+                  </div>
+                  <div className="w-3.5 h-3.5 absolute left-[11px] top-[11px] overflow-hidden">
+                    <svg
+                      width="5"
+                      height="5"
+                      viewBox="0 0 5 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[3px] h-[3px] absolute left-2.5 top-2.5 "
+                    >
+                      <path
+                        d="M3.58325 3.58333L0.583252 0.583328"
+                        stroke="#64748B"
+                        strokeWidth="1.16667"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <svg
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[9px] h-[9px] absolute left-0.5 top-0.5 "
+                    >
+                      <path
+                        d="M5.08325 9.58334C7.56853 9.58334 9.58325 7.56862 9.58325 5.08334C9.58325 2.59805 7.56853 0.583336 5.08325 0.583336C2.59797 0.583336 0.583252 2.59805 0.583252 5.08334C0.583252 7.56862 2.59797 9.58334 5.08325 9.58334Z"
+                        stroke="#64748B"
+                        strokeWidth="1.16667"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex min-w-[57.199px] py-1.5 px-2 justify-center items-center gap-[3px] rounded-md bg-[#F1F5F9] w-[60px] h-[35px] overflow-hidden">
+                  <div className="flex py-0 px-[3px] items-start w-fit">
+                    <p className="text-[#000] font-raleway text-[10px] font-medium leading-4 w-fit">
+                      ফিল্টার
+                    </p>
+                  </div>
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="shrink-0 w-[11px] h-[11px] overflow-hidden relative "
+                  >
+                    <path
+                      d="M3.35986 4.21986L6.2198 7.0798L9.07973 4.21986"
+                      stroke="black"
+                      strokeWidth="0.714983"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="flex min-w-[57.199px] py-1.5 px-2 justify-center items-center gap-[3px] rounded-md bg-[#F1F5F9] w-[100px] h-[35px] overflow-hidden">
+                  <div className="flex py-0 px-[3px] items-start w-fit">
+                    <p className="text-[#000] font-raleway text-[10px] font-medium leading-4 w-fit">
+                      এপ্রিল ২০২৬
+                    </p>
+                  </div>
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="shrink-0 w-[11px] h-[11px] overflow-hidden relative "
+                  >
+                    <path
+                      d="M2.85986 4.21986L5.7198 7.0798L8.57973 4.21986"
+                      stroke="black"
+                      strokeWidth="0.714983"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p className="text-[#000] font-posteramaTextBold text-[22px] w-fit">
+              ছাত্র অগ্রগতি
+            </p>
+            <div className="flex justify-center items-start gap-6 shrink-0 w-full h-[147px]">
+              <div className="flex pt-4 pr-[38px] pb-[19px] pl-[38px] justify-center items-center rounded-md border border-[#E2E8F0] bg-[#FFF] w-[263px] h-[147px]">
+                <div className="flex flex-col items-center gap-4 shrink-0 w-[187px]">
+                  <p className="text-[#64748B] font-raleway text-base font-bold leading-4 w-full text-center">
+                    আজকের অগ্রগতি
+                  </p>
+                  <div className="flex items-center gap-5 w-full">
+                    <div className="flex pl-px justify-center items-center w-20 h-20 overflow-hidden">
+                      <div className="shrink-0 w-[81px] h-[79px] relative">
+                        <div className="w-[81px] h-[79px] absolute left-0 top-0"></div>
+                        <div className="w-[81px] h-[79px] absolute left-0 top-0"></div>
+                        <p className="text-[#1A2332] font-raleway text-lg font-bold leading-6 w-[35px] h-6 absolute left-[23px] top-7">
+                          72%
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start gap-1.5 w-[87px]">
+                      <p className="text-[#64748B] font-raleway text-xs leading-4 w-full h-[15px]">
+                        দৈনিক লক্ষ্য
+                      </p>
+                      <p className="text-[#1A2332] font-raleway text-sm leading-5 w-full">
+                        ৫ ঘন্টার মধ্যে ৩.৬ ঘন্টা
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex pt-[42px] pr-3 pb-[41px] pl-[13px] justify-center items-center rounded-md border border-[#E2E8F0] bg-[#FFF] w-[263px] h-[147px]">
+                <div className="flex flex-col items-center gap-4 shrink-0 w-[238px]">
+                  <p className="text-[#64748B] font-raleway text-base font-bold leading-4 w-full text-center">
+                    অধ্যায় সম্পন্ন
+                  </p>
+                  <p className="text-[#1A2332] font-raleway text-2xl font-bold leading-8 w-full text-center">
+                    ১টি অধ্যায়
+                  </p>
+                </div>
+              </div>
+              <div className="flex pt-[22px] pr-[17px] pb-[21px] pl-[18px] justify-center items-center rounded-md border border-[#E2E8F0] bg-[#FFF] w-[273px] h-[147px]">
+                <div className="flex flex-col items-center gap-2 shrink-0 w-[238px]">
+                  <div className="flex flex-col items-center gap-4 w-full">
+                    <p className="text-[#64748B] font-raleway text-base font-bold leading-4 w-full text-center">
+                      শেষ জিজ্ঞাসা করা প্রশ্ন
+                    </p>
+                    <p className="text-[#1A2332] font-premierLeague text-2xl leading-8 w-full text-center">
+                      গতি কাকে বলে?
+                    </p>
+                  </div>
+                  <button className="cursor-pointer text-nowrap flex p-2 justify-center items-center gap-2 rounded-md border border-[#F55331] bg-[#FFF] w-44 h-8">
+                    <p className="text-[#F55331] font-raleway text-base font-bold leading-4 w-fit">
+                      চ্যাটবক্সে যান
+                    </p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="shrink-0 w-6 h-6 overflow-hidden relative "
+                    >
+                      <path
+                        d="M9 18L15 12L9 6"
+                        stroke="#F55331"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center w-full h-[378px]">
+            <div className="flex flex-col items-start gap-4 w-[847px] h-[404px]">
+              <div className="flex items-start shrink-0 w-full h-[29px]">
+                <p className="text-[#000] font-posteramaTextBold text-[22px] w-full">
+                  এআই টিউটর
+                </p>
+              </div>
+              <div className="flex pb-2.5 justify-center items-center rounded-xl border border-[#BCC7D8] bg-[#FFF] w-full h-[360px] overflow-hidden">
+                <div className="flex pb-[0] flex-col items-start w-[847px] h-[350px]">
+                  <div className="flex pt-3 pr-4 pb-0 pl-4 flex-col items-start shrink-0 w-[847px] h-full overflow-hidden">
+                    <div className="flex pr-[152px] items-center w-full h-14">
+                      <div className="flex items-center gap-3 w-fit">
+                        <div className="w-10 h-10 relative">
+                          <div className="w-10 h-10 absolute left-0 top-0"></div>
+                          <p className="text-[#FFF] font-posteramaTextBold text-base w-[17px] h-[21px] absolute left-3 top-2.5">
+                            AI
+                          </p>
+                        </div>
+                        <button className="cursor-pointer text-nowrap flex pt-[7px] pr-[11px] pb-[9px] pl-3 justify-center items-center rounded-2xl bg-[#F0F4F8] w-[611px] h-14">
+                          <p className="shrink-0 text-[#1A2332] font-raleway text-[13px] leading-5 w-[588px] h-10">
+                            নমস্কার! আমি আপনার এআই টিউটর। আপনার পড়াশোনা
+                            সম্পর্কে আমাকে যেকোনো কিছু জিজ্ঞাসা করুন - ধারণা,
+                            সমস্যা বা অধ্যায় পর্যালোচনা। আমি এখানে সাহায্য করার
+                            জন্য আছি!
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex py-3 px-4 items-center gap-2 shrink-0 border-t-[0.8px] border-t-[#E2E8F0] w-[847px] h-[62px]">
+                    <div className="flex py-2 px-3 items-center shrink-0 rounded-[10px] border-[0.8px] border-[#E2E8F0] bg-[#F0F4F8] w-full h-[37px] overflow-hidden">
+                      <p className="text-[#94A3B8] font-raleway text-[13px] w-fit">
+                        আপনার এআই টিউটরকে জিজ্ঞাসা করুন...
+                      </p>
+                    </div>
+                    <div className="flex py-0 px-[9px] justify-center items-center shrink-0 rounded-[40px] bg-[#F55331] w-8 h-8">
+                      <div className="shrink-0 w-3.5 h-3.5 overflow-hidden relative">
+                        <svg
+                          width="13"
+                          height="13"
+                          viewBox="0 0 13 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-3 h-3 absolute left-px top-px "
+                        >
+                          <path
+                            d="M7.89581 12.0683C7.91797 12.1235 7.95649 12.1706 8.00621 12.2033C8.05593 12.236 8.11447 12.2528 8.17396 12.2512C8.23345 12.2497 8.29106 12.23 8.33904 12.1948C8.38702 12.1596 8.42308 12.1106 8.44239 12.0543L12.2341 0.970937C12.2527 0.919249 12.2563 0.863315 12.2443 0.809677C12.2324 0.756039 12.2054 0.706916 12.1665 0.668057C12.1277 0.629198 12.0785 0.602209 12.0249 0.590248C11.9713 0.578288 11.9153 0.581851 11.8636 0.60052L0.780305 4.39219C0.724011 4.41149 0.67497 4.44756 0.639764 4.49554C0.604558 4.54352 0.584871 4.60112 0.583348 4.66061C0.581824 4.7201 0.598535 4.77864 0.631239 4.82836C0.663943 4.87808 0.711073 4.91661 0.766305 4.93877L5.39214 6.79377C5.53837 6.85232 5.67124 6.93987 5.78272 7.05115C5.8942 7.16244 5.98199 7.29514 6.0408 7.44127L7.89581 12.0683Z"
+                            stroke="white"
+                            strokeWidth="1.16667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        <svg
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-1.5 h-1.5 absolute left-1.5 top-px "
+                        >
+                          <path
+                            d="M6.96492 0.583313L0.583252 6.9644"
+                            stroke="white"
+                            strokeWidth="1.16667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+import {
+  Raleway,
+  Posteramatextbold,
+  Poppins,
+  Premier_League,
+} from "next/font/google";
+import "./globals.css";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-raleway",
+});
+const posteramaTextBold = Posteramatextbold({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-posteramatext-bold",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-poppins",
+});
+const premierLeague = Premier_League({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-premier-league",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${raleway.variable} ${posteramaTextBold.variable} ${poppins.variable} ${premierLeague.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  );
+}
+
+
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        raleway: ["--font-raleway"],
+        posteramaTextBold: ["--font-posteramatext-bold"],
+        poppins: ["--font-poppins"],
+        premierLeague: ["--font-premier-league"],
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
+
+
+
+@import "tailwindcss";
+
+@theme inline {
+  --font-raleway: var(--font-raleway);
+  --font-posteramaTextBold: var(--font-posteramatext-bold);
+  --font-poppins: var(--font-poppins);
+  --font-premierLeague: var(--font-premier-league);
+}

@@ -1,0 +1,18 @@
+# Core Web Server
+fastapi
+uvicorn[standard]
+
+# AI & RAG
+langchain-google-genai
+langchain-community
+langchain-text-splitters
+requests
+python-dotenv
+
+# PDF & Data
+pypdf
+pymupdf
+
+# Database
+supabase==2.3.5
+pydantic

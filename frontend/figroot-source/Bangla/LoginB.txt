@@ -1,0 +1,206 @@
+export default function LoginPage() {
+  return (
+    <div className="border-t-8 border-t-[#F0F0F0] border-r-8 border-r-[#F0F0F0] border-l-8 border-l-[#F0F0F0] bg-[#FFF] min-w-screen min-h-screen overflow-hidden">
+      <div className="flex pt-[39px] pr-[63px] pb-[61px] pl-[73px] justify-end items-center rounded-[20px] border border-[#64748B] bg-[#FFF] w-[576px] h-[374px] absolute left-[300px] top-[251px]">
+        <div className="flex flex-col items-center gap-[21px] shrink-0 w-[440px]">
+          <div className="flex flex-col items-start gap-4 w-full">
+            <div className="flex pt-0.5 pr-[5px] pb-0.5 pl-[3px] justify-center items-center rounded-[30px] border border-[#E5E5E5] bg-[#FFF] w-[440px] h-11 overflow-hidden">
+              <div className="flex items-center gap-[11px] w-fit">
+                <button className="cursor-pointer text-nowrap flex p-2 justify-center items-center gap-2 rounded-2xl border border-[#E5E5E5] bg-[#F55331] w-52">
+                  <p className="text-[#FFF] font-poppins text-base w-fit">
+                    সাইন ইন
+                  </p>
+                </button>
+                <button className="cursor-pointer text-nowrap flex p-2 justify-center items-center gap-2 rounded-3xl w-[213px]">
+                  <p className="text-[#000] font-poppins text-base w-fit">
+                    সাইন আপ
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-2 w-full">
+              <button className="cursor-pointer text-nowrap flex py-2 px-5 justify-center items-center gap-[257px] rounded-[30px] border border-[#E5E5E5] bg-[#FFF] w-full h-11 overflow-hidden">
+                <p className="text-[#334155] font-poppins text-xs w-[115px] h-[18px]">
+                  আপনার ই-মেইল লিখুন
+                </p>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-7 h-7 overflow-hidden relative "
+                >
+                  <path
+                    d="M22.6742 4.74249H5.32585C4.5523 4.74249 3.81043 5.04978 3.26345 5.59676C2.71647 6.14375 2.40918 6.88561 2.40918 7.65916V20.3408C2.40918 21.1144 2.71647 21.8562 3.26345 22.4032C3.81043 22.9502 4.5523 23.2575 5.32585 23.2575H22.6742C23.4477 23.2575 24.1896 22.9502 24.7366 22.4032C25.2836 21.8562 25.5908 21.1144 25.5908 20.3408V7.65916C25.5908 6.88561 25.2836 6.14375 24.7366 5.59676C24.1896 5.04978 23.4477 4.74249 22.6742 4.74249ZM5.32585 5.90916H22.6742C23.1157 5.90816 23.541 6.07521 23.8639 6.37639C24.1867 6.67756 24.3829 7.0903 24.4125 7.53083C21.5308 9.07083 18.6375 10.5992 15.7442 12.1392C15.3534 12.3856 14.9391 12.5927 14.5075 12.7575C14.1691 12.8245 13.8202 12.8186 13.4843 12.7401C13.1483 12.6617 12.8329 12.5125 12.5592 12.3025C10.9025 11.4275 9.24585 10.5408 7.60085 9.66583C6.27085 8.96583 4.91751 8.25416 3.58751 7.54249C3.6143 7.0999 3.8092 6.68426 4.13234 6.38064C4.45548 6.07701 4.88244 5.90835 5.32585 5.90916ZM24.4242 20.3408C24.4242 20.805 24.2398 21.2501 23.9116 21.5783C23.5834 21.9065 23.1383 22.0908 22.6742 22.0908H5.32585C4.86172 22.0908 4.4166 21.9065 4.08841 21.5783C3.76022 21.2501 3.57585 20.805 3.57585 20.3408V8.86666C6.32918 10.3133 9.07085 11.7833 11.8242 13.2417C12.316 13.5435 12.8456 13.7789 13.3992 13.9417C14.2093 14.0736 15.0397 13.9034 15.7325 13.4633C17.4242 12.5767 19.1042 11.6783 20.7958 10.7917C22.0092 10.1383 23.2108 9.50833 24.4242 8.86666V20.3408Z"
+                    fill="#334155"
+                  />
+                </svg>
+              </button>
+              <button className="cursor-pointer text-nowrap flex py-2 px-5 justify-center items-center gap-[249px] rounded-[30px] border border-[#E5E5E5] bg-[#FFF] w-full h-11 overflow-hidden">
+                <p className="text-[#334155] font-poppins text-xs w-[123px] h-[18px]">
+                  আপনার পাসওয়ার্ড লিখুন
+                </p>
+                <div className="flex justify-center items-center w-7 h-7">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="shrink-0 w-7 h-7 overflow-hidden relative "
+                  >
+                    <path
+                      d="M13.4167 21C18.0834 21 22.1201 18.41 24.1967 14.5833C22.1201 10.7567 18.0834 8.16667 13.4167 8.16667C8.75008 8.16667 4.71341 10.7567 2.63674 14.5833C4.71341 18.41 8.75008 21 13.4167 21ZM13.4167 7C18.7367 7 23.3334 10.0917 25.5034 14.5833C23.3334 19.075 18.7367 22.1667 13.4167 22.1667C8.09674 22.1667 3.50008 19.075 1.33008 14.5833C3.50008 10.0917 8.09674 7 13.4167 7ZM13.4167 9.33333C16.3334 9.33333 18.6667 11.6667 18.6667 14.5833C18.6667 17.5 16.3334 19.8333 13.4167 19.8333C10.5001 19.8333 8.16674 17.5 8.16674 14.5833C8.16674 11.6667 10.5001 9.33333 13.4167 9.33333ZM13.4167 10.5C12.3338 10.5 11.2952 10.9302 10.5294 11.696C9.76362 12.4618 9.33341 13.5004 9.33341 14.5833C9.33341 15.6663 9.76362 16.7049 10.5294 17.4707C11.2952 18.2365 12.3338 18.6667 13.4167 18.6667C14.4997 18.6667 15.5383 18.2365 16.3041 17.4707C17.0699 16.7049 17.5001 15.6663 17.5001 14.5833C17.5001 13.5004 17.0699 12.4618 16.3041 11.696C15.5383 10.9302 14.4997 10.5 13.4167 10.5Z"
+                      fill="#334155"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-between items-center w-full">
+            <div className="flex items-center gap-[7px] w-fit">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 relative "
+              >
+                <circle cx="10" cy="10" r="9.5" stroke="#64748B" />
+              </svg>
+              <p className="text-[#000] font-poppins text-base w-fit">
+                আমাকে মনে রাখুন
+              </p>
+            </div>
+            <p className="text-[#F55331] font-poppins text-base w-fit">
+              পাসওয়ার্ড ভুলে গেছেন?
+            </p>
+          </div>
+          <button className="cursor-pointer text-nowrap flex p-2 justify-center items-center gap-2 rounded-2xl bg-[#F55331] w-full">
+            <p className="text-[#FFF] font-poppins text-2xl w-fit">লগইন</p>
+          </button>
+        </div>
+      </div>
+      <div className="w-[344px] h-[107px] absolute left-[420px] top-[116px]">
+        <div className="inline-flex items-center gap-[29px] absolute left-0 top-0">
+          <img
+            src="/BeigeRedBlackModernMinimalistMonogramLogo11.png"
+            className="w-[69px] h-[66px] absolute left-0 top-1.5 max-w-none"
+            alt="Beige Red & Black Modern Minimalist Monogram Logo(1) 1"
+          />
+          <p className="text-[#000] font-posteramaTextBold text-[58px] absolute left-[98px] top-0">
+            Shikh-AI
+          </p>
+        </div>
+        <p className="text-[#334155] font-poppins text-[22px] w-[278px] h-[33px] absolute left-[54px] top-[74px]">
+          আপনার ব্যক্তিগত এআই শিক্ষক
+        </p>
+      </div>
+      <div className="inline-flex items-center gap-5 absolute left-[313px] top-[670px]">
+        <button className="cursor-pointer text-nowrap flex pt-3 pr-0 pb-[11px] pl-0 justify-center items-center rounded-2xl bg-[#F55331] w-[270px] h-[47px] absolute left-0 top-0 overflow-hidden">
+          <p className="text-[#FFF] font-poppins text-2xl font-medium leading-6 w-[57px] h-6">
+            বাংলা
+          </p>
+        </button>
+        <button className="cursor-pointer text-nowrap flex pt-3 pr-0 pb-[11px] pl-0 justify-center items-center rounded-2xl border border-[#F55331] bg-[#FFF] w-[270px] h-[47px] absolute left-[290px] top-0 overflow-hidden">
+          <p className="text-[#F55331] font-poppins text-2xl font-medium leading-6 w-[77px] h-6">
+            ইংরেজি
+          </p>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+
+
+import { Poppins, Posteramatextbold } from "next/font/google";
+import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-poppins",
+});
+const posteramaTextBold = Posteramatextbold({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-posteramatext-bold",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${poppins.variable} ${posteramaTextBold.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  );
+}
+
+
+
+import { Poppins, Posteramatextbold } from "next/font/google";
+import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-poppins",
+});
+const posteramaTextBold = Posteramatextbold({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-posteramatext-bold",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${poppins.variable} ${posteramaTextBold.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  );
+}
+
+
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ["--font-poppins"],
+        posteramaTextBold: ["--font-posteramatext-bold"],
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
+
+
+@import "tailwindcss";
+
+@theme inline {
+  --font-poppins: var(--font-poppins);
+  --font-posteramaTextBold: var(--font-posteramatext-bold);
+}

@@ -1,0 +1,30 @@
+# ── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ── Virtual Environment ──────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Environment Variables (SECRET!) ─────────
+.env
+
+# ── IDE / Editor ────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── OS Files ────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ────────────────────────────────────
+*.log
+
+#files 
+backend/data/physics.pdf
