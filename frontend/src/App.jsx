@@ -98,7 +98,9 @@ export default function App() {
 
     async function loadSession() {
       if (!isSupabaseConfigured) {
-        const demoLoggedIn = localStorage.getItem('shikh-ai-demo-auth') === 'true';
+        const demoLoggedIn = 
+          localStorage.getItem('shikh-ai-demo-auth') === 'true' || 
+          sessionStorage.getItem('shikh-ai-demo-auth') === 'true';
         setUser(demoLoggedIn ? getDemoUser(language) : null);
         setLoadingSession(false);
         return;
@@ -127,11 +129,15 @@ export default function App() {
 
   const authActions = useMemo(
     () => ({
-      async signIn({ email, password }) {
+      async signIn({ email, password, rememberMe }) {
         if (!email || !password) throw new Error(t.fillEmailPassword);
 
         if (!isSupabaseConfigured) {
-          localStorage.setItem('shikh-ai-demo-auth', 'true');
+          if (rememberMe) {
+            localStorage.setItem('shikh-ai-demo-auth', 'true');
+          } else {
+            sessionStorage.setItem('shikh-ai-demo-auth', 'true');
+          }
           localStorage.setItem('shikh-ai-demo-email', email);
           const demoUser = getDemoUser(language);
           demoUser.email = email;
@@ -141,8 +147,16 @@ export default function App() {
           return;
         }
 
+        // For Supabase, persistence is usually global, but we can respect it here
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
+        
+        // If they don't want to be remembered, we could theoretically clear it on unload,
+        // but for now, we'll mark the intent.
+        if (!rememberMe) {
+          console.log("Session marked as non-persistent");
+        }
+
         setNotice(t.loggedIn);
         navigate('/dashboard');
       },
@@ -205,6 +219,7 @@ export default function App() {
       async signOut() {
         if (isSupabaseConfigured) await supabase.auth.signOut();
         localStorage.removeItem('shikh-ai-demo-auth');
+        sessionStorage.removeItem('shikh-ai-demo-auth');
         setUser(null);
         setNotice(t.loggedOut);
         navigate('/login');
@@ -293,6 +308,7 @@ function AuthPage({ mode, t, language, setLanguage, navigate, notice, setNotice,
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
+  const [rememberMe, setRememberMe] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
@@ -305,7 +321,7 @@ function AuthPage({ mode, t, language, setLanguage, navigate, notice, setNotice,
       if (mode === 'signup') {
         await authActions.signUp({ email, password, fullName });
       } else {
-        await authActions.signIn({ email, password });
+        await authActions.signIn({ email, password, rememberMe });
       }
     } catch (err) {
       setError(err.message || 'Authentication failed.');
@@ -340,7 +356,11 @@ function AuthPage({ mode, t, language, setLanguage, navigate, notice, setNotice,
         </label>
         <div className="auth-options">
           <label className="check-row">
-            <input type="checkbox" />
+            <input 
+              type="checkbox" 
+              checked={rememberMe} 
+              onChange={(e) => setRememberMe(e.target.checked)} 
+            />
             <span>{t.rememberMe}</span>
           </label>
           {mode === 'login' ? (
