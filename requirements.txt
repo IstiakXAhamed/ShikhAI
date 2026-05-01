@@ -1,0 +1,18 @@
+# ── Backend & Web Server ──────────────────────
+fastapi
+uvicorn[standard]
+pydantic
+requests
+python-dotenv
+
+# ── AI & RAG (Google Gemini) ──────────────────
+langchain-google-genai
+langchain-community
+langchain-text-splitters
+
+# ── Textbook Ingestion & PDF ──────────────────
+pypdf
+pymupdf
+
+# ── Database (Supabase) ───────────────────────
+supabase==2.3.5
