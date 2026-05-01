@@ -1,4 +1,4 @@
-# ── Core Web Server (Hard-Pinned for Stability) ──
+# ── Core Web Server (Hard-Pinned) ──
 fastapi==0.110.0
 starlette==0.36.3
 uvicorn==0.27.1
@@ -6,10 +6,9 @@ uvicorn==0.27.1
 # ── AI & API Utilities ───────────────────────
 requests==2.31.0
 python-dotenv==1.0.1
-httpx==0.25.2
+httpx==0.24.1
 
 # ── Database (Golden Set for Supabase 2.3.5) ──
-# Explicitly pinning sub-packages to stop pip backtracking
 supabase==2.3.5
 pydantic==2.6.1
 pydantic-core==2.16.2
