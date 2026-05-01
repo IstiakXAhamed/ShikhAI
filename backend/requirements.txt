@@ -1,18 +1,11 @@
 # Core Web Server
 fastapi
-uvicorn[standard]
+uvicorn
 
-# AI & RAG
-langchain-google-genai
-langchain-community
-langchain-text-splitters
+# AI & API
 requests
 python-dotenv
 
-# PDF & Data
-pypdf
-pymupdf
-
-# Database
+# Database (Keep the pinned version)
 supabase==2.3.5
 pydantic
