@@ -342,7 +342,7 @@ vercel --prod
 
 ## 👩‍💻 Author
 
-**Samia** — AIUB CSE  
+**MD ISTIAK AHAMED** — AIUB CSE  
 *NLP Course Project — Spring 2026*
 
 ---
